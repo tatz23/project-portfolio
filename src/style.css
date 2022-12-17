@@ -1,6 +1,7 @@
 :root {
   --branding-color: #0019ff;
   --secondary-color: #ddedff;
+  --third-color: #001357;
   --heading-font-family: "Playfair Display", serif;
   --default-font-family: "Poppins", sans-serif;
 }
@@ -28,7 +29,7 @@ h2 {
   font-size: 64px;
 }
 
-h4{
+h3 {
   font-size: 48px;
 }
 
@@ -42,7 +43,7 @@ p {
 .hero {
   /*background-color: var(--secondary-color);*/
   text-align: center;
-  padding: 160px 20px;
+  padding: 80px 20px;
 }
 
 .hero p {
@@ -61,7 +62,7 @@ p {
 }
 
 .content-container {
-  padding: 160px 20px;
+  padding: 60px 20px;
 }
 
 .content h1 {
@@ -74,7 +75,7 @@ p {
   font-family: var(--default-font-family);
 }
 
-.content h3 {
+.ways-to-contact h3 {
   font-size: 24px;
   line-height: 1.5;
   font-family: var(--default-font-family);
@@ -86,6 +87,10 @@ p {
 
 .content {
   margin: 30px;
+}
+
+.description {
+  color: var(--third-color);
 }
 
 .projects {
@@ -108,17 +113,18 @@ nav ul {
 nav li {
   display: inline;
   list-style: none;
-  line-height: 42px; 
+  line-height: 42px;
   margin-left: 15px;
 }
 
 nav a {
- text-decoration: none;
- color: #00081C;
- opacity: 0.7;
+  text-decoration: none;
+  color: #00081c;
+  opacity: 0.7;
 }
 
-nav a:hover, nav li.active a{
+nav a:hover,
+nav li.active a {
   color: var(--branding-color);
   transition: all 100ms ease-in-out;
   opacity: 1;
@@ -135,7 +141,7 @@ footer .contact-box {
 }
 
 footer .contact-box p {
-  margin: 0;  
+  margin: 0;
 }
 footer .email-link {
   text-decoration: none;
@@ -170,11 +176,9 @@ footer .social-links a:hover {
   padding: 120px 60px;
 }
 
-.fa-address-book{
+.fa-link {
   color: var(--branding-color);
-  font-size: 300px;
-  opacity: 0.7;
-  margin-left: -180px;
+  font-size: 200px;
 }
 
 .btn-branding {
@@ -224,26 +228,20 @@ footer .social-links a:hover {
     line-height: 56px;
   }
 
-  h4 {
+  h3 {
     font-size: 26px;
   }
 
-  .hero {
-    padding: 80px 10px;
-  }
   .projects h2 {
     font-size: 40px;
   }
 
-  .content{
+  .content {
     text-align: center;
     padding: 0;
-
   }
-  
+
   nav a {
     font-size: 14px;
   }
-
-  
 }
